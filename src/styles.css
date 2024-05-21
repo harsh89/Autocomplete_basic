@@ -1,0 +1,38 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .search-bar,
+    .suggestion {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 20px;
+
+      input {
+        width: 70%;
+      }
+    }
+    .suggestion-list {
+      height: 100px;
+      list-style: none;
+      padding-left: 20px;
+      overflow-y: scroll;
+
+      .suggestion-list-item {
+        margin-top: 5px;
+        text-align: left;
+
+        &:focus {
+          border-color: aliceblue;
+          border: 2px solid black;
+        }
+      }
+    }
+  }
+}
